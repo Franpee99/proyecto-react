@@ -33,15 +33,14 @@ function Inicio() {
   return (
     <div className="contenedor">
       <Encabezado />
-      <h2>Bienvenido a nuestra tienda</h2>
+      <h2>Bienvenido a Pérez Motor</h2>
 
       {/* 🔹 Sección de botones principales */}
       <div className="botones-principales">
         <Link to="/carrito">
-          <Boton texto="🛒 Ir al Carrito" tipo="secundario" />
         </Link>
         <Link to="/otra">
-          <Boton texto="🌍 Ir a Otra Página" tipo="primario" />
+          <Boton texto="Ir a Otra Página" tipo="primario" />
         </Link>
         <Boton texto="🔗 Ir a Google" tipo="secundario" url="https://google.com" />
       </div>

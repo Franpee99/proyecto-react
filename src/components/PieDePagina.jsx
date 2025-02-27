@@ -1,7 +1,7 @@
 function PieDePagina() {
     return (
       <footer className="pie-de-pagina">
-        <p>© 2024 Mi Tienda. Todos los derechos reservados.</p>
+        <p>© 2025 MAC. Todos los derechos reservados.</p>
       </footer>
     );
   }

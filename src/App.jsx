@@ -3,6 +3,8 @@ import { CarritoProvider } from "./context/CarritoContext";
 import Inicio from "./pages/Inicio";
 import OtraPagina from "./pages/OtraPagina";
 import Carrito from "./pages/Carrito";
+import "./styles.css";
+
 
 function App() {
   return (
