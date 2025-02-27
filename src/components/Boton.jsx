@@ -1,9 +1,21 @@
-function Boton({ texto, onClick }) {
+import React from "react";
+
+function Boton({ texto, onClick, tipo = "primario", deshabilitado = false, url }) {
+  if (url) {
     return (
-      <button className="boton" onClick={onClick}>
-        {texto}
-      </button>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <button className={`boton ${tipo}`} disabled={deshabilitado}>
+          {texto}
+        </button>
+      </a>
     );
   }
 
-  export default Boton;
+  return (
+    <button className={`boton ${tipo}`} onClick={onClick} disabled={deshabilitado}>
+      {texto}
+    </button>
+  );
+}
+
+export default Boton;

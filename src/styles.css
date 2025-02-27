@@ -53,19 +53,146 @@
     text-align: center;
   }
 
-  /* 🔹 Estilos del Botón */
-  .boton {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+/* 🔹 Estilos generales del botón */
+.boton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* 🔹 Botones principales en la página de inicio */
+.botones-principales {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+/* 🔹 Botón primario (rojo) */
+.boton.primario {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.boton.primario:hover {
+  background-color: #c0392b;
+}
+
+/* 🔹 Botón secundario (azul) */
+.boton.secundario {
+  background-color: #3498db;
+  color: white;
+}
+
+.boton.secundario:hover {
+  background-color: #2980b9;
+}
+
+/* 🔹 Botón deshabilitado */
+.boton:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+
+  /* 🔹 Contenedor de productos en formato 3x3 */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre los productos */
+    justify-items: center;
     margin-top: 20px;
   }
 
-  .boton:hover {
-    background-color: #c0392b;
+  /* 🔹 Cada producto en la cuadrícula */
+  .producto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
   }
+
+  /* 🔹 Ajuste de imágenes */
+  .producto img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* 🔹 Ajustar el botón */
+  .producto .boton {
+    margin-top: 10px;
+  }
+
+  /* 🔹 Botones de cantidad */
+.producto .boton {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+/* 🔹 Botón eliminar */
+.boton.eliminar {
+  background-color: red;
+}
+
+.boton.eliminar:hover {
+  background-color: darkred;
+}
+
+/* 🔹 Grid del carrito en formato 4x4 */
+.carrito-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 15px; /* Espacio entre productos */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* 🔹 Productos más pequeños en el carrito */
+.producto-carrito {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+  font-size: 14px;
+}
+
+/* 🔹 Ajuste de imágenes en el carrito */
+.producto-carrito img {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 🔹 Botones más compactos */
+.botones-carrito {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.botones-carrito .boton {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* 🔹 Estilos del total en el carrito */
+.total-carrito {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}

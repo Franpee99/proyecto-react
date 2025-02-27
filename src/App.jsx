@@ -1,15 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { CarritoProvider } from "./context/CarritoContext";
 import Inicio from "./pages/Inicio";
 import OtraPagina from "./pages/OtraPagina";
+import Carrito from "./pages/Carrito";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/otra" element={<OtraPagina />} />
-      </Routes>
-    </Router>
+    <CarritoProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/otra" element={<OtraPagina />} />
+          <Route path="/carrito" element={<Carrito />} />
+        </Routes>
+      </Router>
+    </CarritoProvider>
   );
 }
 

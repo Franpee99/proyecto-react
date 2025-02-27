@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta España",
+    "precio": 15,
+    "imagen": "/assets/camiseta.webp"
+  },
+  {
+    "id": 2,
+    "nombre": "Pantalón Oversize",
+    "precio": 25,
+    "imagen": "/assets/pantalon.webp"
+  },
+  {
+    "id": 3,
+    "nombre": "Zapato Caballero",
+    "precio": 50,
+    "imagen": "/assets/zapatos.jpeg"
+  }
+]
