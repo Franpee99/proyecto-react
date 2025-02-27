@@ -1,0 +1,71 @@
+/* 🔹 Reset de estilos para quitar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* 🔹 Estilos Generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  /* 🔹 Contenedor Principal */
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Para que no se haga demasiado ancho */
+    text-align: center;
+  }
+
+  /* 🔹 Estilos del Encabezado */
+  .encabezado {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  /* 🔹 Estilos del Pie de Página */
+  .pie-de-pagina {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 🔹 Estilos del Botón */
+  .boton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+
+  .boton:hover {
+    background-color: #c0392b;
+  }
