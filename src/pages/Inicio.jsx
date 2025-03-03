@@ -33,7 +33,7 @@ function Inicio() {
   return (
     <div className="contenedor">
       <Encabezado />
-      <h2>Bienvenido a Pérez Motor</h2>
+      <h2>Bienvenido a MAC</h2>
 
       {/* 🔹 Sección de botones principales */}
       <div className="botones-principales">

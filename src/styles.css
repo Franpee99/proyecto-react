@@ -1,23 +1,26 @@
 /* 🔹 Reset de estilos para quitar márgenes y padding por defecto */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* 🔹 Estilos Generales */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+/* 🔹 Estilos Generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aseguramos que el contenido se alinee arriba */
+  min-height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
+  padding-top: 200px; /* Espacio para el encabezado */
+  padding-bottom: 40px; /* Espacio para el pie de página */
+  overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
 
-  /* 🔹 Ajuste de párrafos */
+/* 🔹 Ajuste de párrafos */
 p {
   font-weight: 300;
   font-size: 16px;
@@ -25,17 +28,17 @@ p {
   text-align: center;
 }
 
-
-  /* 🔹 Contenedor Principal */
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px; /* Para que no se haga demasiado ancho */
-    text-align: center;
-  }
+/* 🔹 Contenedor Principal */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 40px; /* Añadido margen para que no se solape con el pie de página */
+}
 
 /* 🔹 Estilos del encabezado */
 .encabezado {
@@ -53,7 +56,7 @@ p {
 
 /* 🔹 Logo más grande */
 .logo img {
-  height: 120px; /* Aumentado */
+  height: 120px;
 }
 
 /* 🔹 Menú centrado */
@@ -61,50 +64,44 @@ p {
   display: flex;
   gap: 40px;
   flex-grow: 1;
-  justify-content: center; /* Centrar el menú */
+  justify-content: center;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-size: 20px; /* Tamaño aumentado */
+  font-size: 20px;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .menu a:hover {
-  color:rgb(243, 52, 18); /* Color resaltado */
+  color: rgb(243, 52, 18);
 }
 
 /* 🔹 Carrito de compras */
 .carrito img {
-  height: 40px; /* Tamaño ajustado */
+  height: 40px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
 .carrito img:hover {
-  transform: scale(1.1); /* Efecto de agrandado al pasar el mouse */
+  transform: scale(1.1);
 }
 
-/* 🔹 Asegurar que el contenido no quede detrás del encabezado */
-body {
-  padding-top: 90px;
+/* 🔹 Estilos del Pie de Página */
+.pie-de-pagina {
+  background-color: #0b0e26;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
 }
-
-
-
-  /* 🔹 Estilos del Pie de Página */
-  .pie-de-pagina {
-    background-color: #0b0e26;
-    color: white;
-    padding: 15px;
-    font-size: 16px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
 
 /* 🔹 Estilos generales del botón */
 .boton {
@@ -123,7 +120,6 @@ body {
   justify-content: center;
   margin-bottom: 20px;
 }
-
 
 /* 🔹 Botón primario (rojo) */
 .boton.primario {
@@ -151,45 +147,43 @@ body {
   cursor: not-allowed;
 }
 
-
-  /* 🔹 Contenedor de productos en formato 3x3 */
+/* 🔹 Contenedor de productos en formato 3x3 */
 .productos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px; /* Espacio entre los productos */
-    justify-items: center;
-    margin-top: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
 
-  /* 🔹 Cada producto en la cuadrícula */
-  .producto {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 250px;
-  }
+/* 🔹 Cada producto en la cuadrícula */
+.producto {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
 
-  /* 🔹 Ajuste de imágenes */
-  .producto img {
-    width: 100px;
-    height: auto;
-    object-fit: cover;
-  }
+/* 🔹 Ajuste de imágenes */
+.producto img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
 
-  /* 🔹 Ajustar el botón */
-  .producto .boton {
-    margin-top: 10px;
-  }
+/* 🔹 Ajustar el botón */
+.producto .boton {
+  margin-top: 10px;
+}
 
-  /* 🔹 Botones de cantidad */
+/* 🔹 Botones de cantidad */
 .producto .boton {
   margin: 5px;
   padding: 5px 10px;
   font-size: 16px;
 }
-
 
 /* 🔹 Botón eliminar */
 .boton.eliminar {
@@ -203,8 +197,8 @@ body {
 /* 🔹 Grid del carrito en formato 4x4 */
 .carrito-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-  gap: 15px; /* Espacio entre productos */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
   justify-items: center;
   margin-top: 20px;
 }
@@ -259,14 +253,14 @@ body {
 
 /* 🔹 Nuevo tamaño del carrito */
 .icono-carrito {
-  width: 50px; /* Más grande */
+  width: 50px;
   height: 50px;
   transition: transform 0.3s ease-in-out, stroke 0.3s ease-in-out;
-  stroke: white; /* Color inicial */
+  stroke: white;
 }
 
 /* 🔹 Efecto al pasar el mouse */
 .icono-carrito:hover {
-  transform: scale(1.3); /* Se agranda ligeramente */
-  stroke: red; /* Se vuelve rojo */
+  transform: scale(1.3);
+  stroke: red;
 }
