@@ -51,7 +51,7 @@ function Inicio() {
           <div key={producto.id} className="producto">
             <img src={producto.image || producto.imagen} alt={producto.title || producto.nombre} />
             <p><strong>{producto.title || producto.nombre}</strong></p>
-            <p>${producto.price || producto.precio}</p>
+            <p>{producto.price || producto.precio}€</p>
             <Boton texto="Agregar al Carrito" tipo="primario" onClick={() => agregarAlCarrito(producto)} />
           </div>
         ))}
